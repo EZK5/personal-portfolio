@@ -50,19 +50,19 @@ function sendEmail(){
         email: document.getElementById("email").value,
         message: document.getElementById("message").value,
     };
-    console.log(params);
-
-    const serviceId = "service_v8ztsrh";
-    const templateId = "template_zgq4xq5";
-    const msg = document.getElementById("msg");
-    emailjs
-        .send(serviceId,templateId,params)
-        .then((res) =>{
-                msg.innerHTML = "Email sent successfully!"
-                setTimeout(function(){
-                    msg.innerHTML = "";
-                }, 5000);
-                form.reset()
-            })
-        .catch((err) => alert("fail"))
+    if (params.name.length !== 0 && params.email.length !== 0 && params.message.length !== 0) {
+        const serviceId = "service_v8ztsrh";
+        const templateId = "template_zgq4xq5";
+        const msg = document.getElementById("msg");
+        emailjs
+            .send(serviceId,templateId,params)
+            .then((res) =>{
+                    msg.innerHTML = "Email sent successfully!"
+                    setTimeout(function(){
+                        msg.innerHTML = "";
+                    }, 5000);
+                    form.reset()
+                })
+            .catch((err) => alert("fail"))
+    }
 }
