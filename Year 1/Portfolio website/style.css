@@ -277,7 +277,6 @@ to {opacity: 1}
 }
 
 .project img{
-    width: 100%;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
