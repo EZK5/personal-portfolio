@@ -80,7 +80,7 @@ nav ul li a:hover::after{
     font-weight: bold;
 }
 
-.header-text h1 span{
+.header-text h1 span .coloured-text{
     color: #ff004f;
 }
 

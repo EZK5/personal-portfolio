@@ -17,6 +17,7 @@
     })();
     </script>
     <script src="index.js" type=""text/javascript"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
     <div id="header">
@@ -35,8 +36,9 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Computer Science Student</p>
-                <h1>Hi, I'm <span>Eric Kang</span> From UNSW</h1>
+                <p>Computer Science / Mathematics Student</p>
+                <h1>Hi, I'm <span id = "typing-effect"></span></h1>
+                <!-- <span class = "coloured-text">Eric Kang</span> From UNSW -->
             </div>
         </div>
     </div>
@@ -204,6 +206,16 @@
 
 <script>
     const sidemenu = document.getElementById("sidemenu");
+</script>
+
+<script>
+    var typingEffect = new Typed("#typing-effect", {
+        strings: ["<span class = coloured-text>Eric Kang</span>", "<span class = coloured-text>Eric Kang</span> From <br>UNSW", "<span class = coloured-text>Eric Kang</span> From <br>Sydney, Australia"],
+        loop: true,
+        typeSpeed: 50,
+        backSpeed: 60,
+        backDelay: 1500
+    });
 </script>
 
 </body>
