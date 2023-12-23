@@ -36,9 +36,8 @@
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
-                <p>Computer Science / Mathematics Student</p>
+                <p>Computer Science / <br class = "mobile-formatting">Mathematics Student</p>
                 <h1>Hi, I'm <span id = "typing-effect"></span></h1>
-                <!-- <span class = "coloured-text">Eric Kang</span> From UNSW -->
             </div>
         </div>
     </div>
@@ -210,7 +209,7 @@
 
 <script>
     var typingEffect = new Typed("#typing-effect", {
-        strings: ["<span class = coloured-text>Eric Kang</span>", "<span class = coloured-text>Eric Kang</span> From <br>UNSW", "<span class = coloured-text>Eric Kang</span> From <br>Sydney, Australia"],
+        strings: ["<span class = coloured-text>Eric Kang</span>", "<span class = coloured-text>Eric Kang</span><br class = 'mobile-formatting'> From <br>UNSW", "<span class = coloured-text>Eric Kang</span><br class = 'mobile-formatting'> From <br>Sydney, <br class = 'mobile-formatting'>Australia"],
         loop: true,
         typeSpeed: 50,
         backSpeed: 60,

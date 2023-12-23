@@ -84,6 +84,10 @@ nav ul li a:hover::after{
     color: #ff004f;
 }
 
+.mobile-formatting{
+    display: none;
+}
+
 /* ------------------------------about--------------------------------------- */
 
 #about{
@@ -441,6 +445,9 @@ nav .fa-solid{
     .header-text h1{
         font-size: 29px;
         margin-top: 0px;
+    }
+    .mobile-formatting{
+        display: block;
     }
     nav .fa-solid{
         display: block;
