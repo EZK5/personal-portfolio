@@ -29,7 +29,7 @@ body{
     cursor: pointer;
 }
 .container{
-    padding: 10px 10%;
+    padding: 0px 10%;
 }
 
 nav{
@@ -484,7 +484,7 @@ nav .fa-solid{
         flex-basis: 100%;
     }
     .about-col-1{
-        margin-bottom: 50px;
+        margin-bottom: 80px;
     }
     .about-col-2{
         font-size: 14px;
