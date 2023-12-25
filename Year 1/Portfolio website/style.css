@@ -439,11 +439,14 @@ nav .fa-solid{
         background-position: center;
     }
     .header-text{
-        margin-top: 150%;
+        position: absolute;
+        bottom: 5%;
+        left: 10%;
         font-size: 16px;
+        min-height: 220px;
     }
     .header-text h1{
-        font-size: 29px;
+        font-size: 27px;
         margin-top: 0px;
     }
     .mobile-formatting{
